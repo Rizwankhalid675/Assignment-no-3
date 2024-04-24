@@ -1,11 +1,12 @@
 Audio Recorder in Android with Example
-Last Updated : 26 Dec, 2022
-•	
-•	
-•	
+Last Updated : 24 Apr, 2024
 In Android for recording audio or video, there is a built-in class called MediaRecorder. This class in Android helps to easily record video and audio files. The Android multimedia framework provides built-in support for capturing and encoding common audio and video formats. In android for recording audio, we will use a device microphone along with MediaRecorder Class and for recording video, we will use the user’s device Camera and MediaRecorder Class. Now in this article, we will see the implementation of an audio recorder in Android with an example. 
+
 Important Methods of MediaRecorder Class
-Method 	Description
+Method 
+
+Description
+
 setAudioSource()	This method will specify the source of the audio to be recorded.
 setAudioEncoder()	This method is used to specify the audio encoder.
 setOutputFormat()	This method is used to specify the output format of our audio.
@@ -15,13 +16,18 @@ start()	This method is used to start the recording process.
 release()	This method is used to release the resource that is associated with the Media recorder class.
 Example
 Now we are creating a simple audio recorder app in which we will record audio from users device microphone and then we will store this audio recording in users device. We will also play this saved audio recording. A sample GIF is given below to get an idea about what we are going to do in this article. Note that we are going to implement this project using the Java language. 
- 
+
+Audio Recorder in Android 
+
 Step by Step Implementation
 Step 1: Create a New Project
+
 To create a new project in Android Studio please refer to How to Create/Start a New Project in Android Studio. Note that select Java as the programming language. 
+
 Step 2: Add permissions in the AndroidManifest.xml file
+
 Add below line in the AndroidManifest.xml file. 
-•	XML
+
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -51,8 +57,9 @@ Add below line in the AndroidManifest.xml file.
  
 </manifest>
 Step 3: Modify the colors.xml and strings.xml file
+
 Below is the code for the colors.xml file. 
-•	XML
+
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#0F9D58</color>
@@ -65,7 +72,7 @@ Below is the code for the colors.xml file.
     <color name="gray">#A39696</color>
 </resources>
 Below is the code for the strings.xml file. 
-•	XML
+
 <resources>
     <string name="app_name">GFG APP</string>
     <string name="toggle_flash">Toggle Flash</string>
@@ -79,8 +86,9 @@ Below is the code for the strings.xml file.
     <string name="status">Status</string>
 </resources>
 Step 4: Working with the activity_main.xml file
+
 Navigate to the app > res > layout > activity_main.xml. Below is the code for the activity_main.xml file. Comments are added inside the code to understand the code in more detail. 
-•	XML
+
 <?xml version="1.0" encoding="utf-8"?>
 <!--XML code for activity_main.xml-->
 <RelativeLayout
@@ -188,8 +196,9 @@ Navigate to the app > res > layout > activity_main.xml. Below is the code for th
     </LinearLayout>
 </RelativeLayout>
 Step 5: Working with the MainActivity.java file
+
 Navigate to the app > java > Your app’s package name > MainActivity.java. Below is the code for the MainActivity.java file. Comments are added inside the code to understand the code in more detail. 
-•	Java
+
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
@@ -420,10 +429,6 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 All drawables are stored in the drawable folder. Navigate to the app > res > drawable folder to see all drawables. Now run the app on the Physical device to test it.  
+
 Output: Run on Physical Device
 Video Player
-00:00
-00:18
-GitHub link for the project: https://github.com/ChaitanyaMunje/QR_Code_Scanner/tree/Audio_recorder
- 
-
