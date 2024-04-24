@@ -16,7 +16,9 @@ start()	This method is used to start the recording process.
 release()	This method is used to release the resource that is associated with the Media recorder class.
 Example
 Now we are creating a simple audio recorder app in which we will record audio from users device microphone and then we will store this audio recording in users device. We will also play this saved audio recording. A sample GIF is given below to get an idea about what we are going to do in this article. Note that we are going to implement this project using the Java language. 
-https://media.geeksforgeeks.org/wp-content/uploads/20201212225437/AudioRecorderinAndroid.gif
+
+![image](https://github.com/Rizwankhalid675/Assignment-no-3/assets/81904250/a696319e-52e7-4554-80b7-90b7e4019ea1)
+
 
 Audio Recorder in Android 
 
@@ -432,4 +434,5 @@ public class MainActivity extends AppCompatActivity {
 All drawables are stored in the drawable folder. Navigate to the app > res > drawable folder to see all drawables. Now run the app on the Physical device to test it.  
 
 Output: Run on Physical Device
-Video Player
+
+https://www.geeksforgeeks.org/audio-recorder-in-android-with-example/
